@@ -208,41 +208,25 @@ input.sp-selector-4:checked ~ .sp-content .sp-slider {
 input.sp-selector-5:checked ~ .sp-content .sp-slider {
     left: -400%;
 }
-/*
-#button-1:hover, #button-2:hover, #button-3:hover, #button-4:hover, #button-5:hover {
 
-opacity: .50;
-*/
+input.sp-selector-1:checked ~ .sp-content .sp-slider > li:first-child,
+input.sp-selector-2:checked ~ .sp-content .sp-slider > li:nth-child(2),
+input.sp-selector-3:checked ~ .sp-content .sp-slider > li:nth-child(3),
+input.sp-selector-4:checked ~ .sp-content .sp-slider > li:nth-child(4),
+input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){
+    opacity: 1;
 }
 
- 
-/*
-#button-1:checked, #button-2:checked, #button-3:checked, #button-4:checked, #button-5:checked {
-
-opacity: 1;
-
-}*/
 
  
-
 ul {
-
 transition-duration: 0.8s;
-
 transition-timing-function: ease-in;
-
 transition-delay: 0.4s;
-
 transition-opacity: 1;
-
 }
-
  
-
 .sp-parallax-bg {
-
 transition-duration: 0.7s;
-
 transition-timing-function: linear;
-
 }

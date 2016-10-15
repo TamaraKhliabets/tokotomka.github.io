@@ -1,0 +1,81 @@
+body {
+	background-image: url(pic1.jpg);
+	background-size: cover;
+	margin: 10% 20% 5% 20%;
+	font: 150% Tahoma, Helvetica, Arial, Sans-Serif;
+	color: #222;
+	text-shadow: 0px 2px 3px #555;
+	transition: linear 3s;
+}
+
+td {
+	height: 95%;
+	width: 20%;
+	padding: 0.5%;
+}
+
+td:first-child {
+	text-indent: 4em;
+}
+
+td:last-child, span{
+	color: red;
+	font-style: normal;
+	text-indent: 3%;
+}
+
+h1 {
+	text-align: center;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer {
+	text-align: end;
+}
+
+.field {
+	border-radius: 5px;
+	font-size: 100%;
+	box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+	border: solid 1px #222;
+	margin: 2%;
+	background-color: #EDE8E1;
+	height: 100%;
+	width: 95%;
+}
+
+input:focus {
+	border: 2px solid red;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	font-style: italic;
+	font-weight: bold; 
+	transition: linear 0.3s;
+}
+
+a:hover {
+	color: red;
+	transition: linear 0.3s;
+}
+
+button:hover {
+	background-color: #ff6666;
+	transition: linear 0.3s;
+}
+
+button {
+	border-radius: 10px;
+	font-size: 100%;
+	box-shadow: 0px 0px 10px black;
+	border: solid 1px #222;
+	margin: 2%;
+	background-color: #ffcccc;
+	transition: linear 0.3s;
+}
+
+#but {
+	text-align: center;
+}

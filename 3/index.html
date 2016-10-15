@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="hw1.css" rel="stylesheet">
+	<title>Create your world</title>
+	<script type="text/javascript" src="hw1.js"></script>
+	</head>
+<body>
+	<h1>Online GAME registration form</h1>
+	<hr/>
+	<table>
+		<tr>
+			<td><label for="nickname">Nickname <span>*</span></label></td>
+			<td><input class="field" id="nickname" type="text" required></input></td>
+			<td id="nicknameError"></td>
+		</tr>
+		<tr>
+			<td><label for="emailAddress" placeholder="example@mail.by">Email <span>*</span></label></td>
+			<td><input class="field" id="emailAddress" type="email" required></input></td>
+			<td id="emailError"></td>
+		</tr>
+		<tr>
+			<td><label for="password">Password <span>*</span></label></td>
+			<td><input class="field" id="password" type="password" required></input></td>
+			<td id="passwordError"></td>
+		</tr>
+		<tr>
+			<td><label>Mode</label></td>
+			<td>
+				<label for="create">
+					<input id="create" type="radio" name="strategy" checked/>
+					Create the World
+				</label><br>
+				<label for="destroy">
+					<input id="destroy" type="radio" name="strategy"/>
+					Destroy the World
+				</labek>
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><label>Hero</label></td>
+			<td>
+				<select class="field" id="select">
+					<option value="" selected="selected">Random</option>
+					<option value="">God</option>
+					<option value="">Adam</option>
+					<option value="">Eve</option>
+					<option value="">Snake</option>
+				</select>
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><label>Your moto</label><br></td>
+			<td><textarea class="field" placeholder="May The Force be with you..."></textarea></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<input id="checkbox" type="checkbox" required></input>
+				<label for="checkbox">I agree with Policy <span>*</span></label>
+			</td>
+			<td id="checkboxError"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td id="but"><button id="button" onclick="inputCheck()">Register</button></td>
+			<td></td>
+		</tr>
+	</table>
+	<hr/>
+	<footer>
+		All rights are reserved. &copy 2016
+		<p>Powered by <a href="https://www.training.by">training.by</a></p>
+	</footer>
+</body> 
+</html>

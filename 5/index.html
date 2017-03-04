@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calendar</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="calendar.css">
+	<link rel="stylesheet" type="text/css" href="media.css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo|Sansita" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="menu topElement">
+			<ul class="main-menu">
+				<li>&#9776;
+					<ul class="period">
+						<li><a href="#">Year</a></li>
+						<li><a href="#">Month</a></li>
+						<li><a href="#">Week</a></li>
+						<li><a href="#">Day</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="select">
+			<select>
+				<option>Jan</option>
+				<option>Feb</option>
+				<option>Mar</option>
+				<option>Apr</option>
+				<option>May</option>
+				<option>Jun</option>
+				<option>Jul</option>
+				<option>Aug</option>
+				<option>Sep</option>
+				<option>Oct</option>
+				<option>Nov</option>
+				<option>Dec</option>
+			</select>	
+		</div>
+		<div class="sets topElement">&#8230;</div>
+	</header>
+	<div class="calendar">
+		<div class="hours">
+			<div class="am9 time">9 am</div>
+			<div class="am10 time">10 am</div>
+			<div class="am11 time">11 am</div>
+			<div class="am12 time">12 am</div>
+			<div class="pm1 time">1 pm</div>
+			<div class="pm2 time">2 pm</div>
+			<div class="pm3 time">3 pm</div>
+			<div class="pm4 time">4 pm</div>
+			<div class="pm5 time">5 pm</div>
+			<div class="pm6 time">6 pm</div>
+		</div>
+		<div class="days mo" id="monday">
+			<div class="dayOfWeek">
+				<div class="day">Mon</div>
+				<div class="date">13</div>
+			</div>
+			<div class="eventOfDay"></div>
+			<div class="work twoHourEvent pm2 time">
+				<div>Meeting with Harry Potter</div>
+				<div>14.00 - 16.00</div>
+			</div>
+			<div class="sport oneHourEvent pm5 time">
+				<div>Workout</div>
+				<div>17.00 - 18.00</div>
+			</div>
+		</div>
+		<div class="days tu" id="tuesday">
+			<div class="dayOfWeek">
+				<div class="day">Tue</div>
+				<div class="date">14</div>
+			</div>
+			<div class="eventOfDay">
+				<div>Valentine's Day</div>
+			</div>
+			<div class="work twoHourEvent am11 time">
+				<div>Negotiations with US President</div>
+				<div>11.00 - 13.00</div>
+			</div>
+		</div>
+		<div class="days  we" id="wednesday">
+			<div class="dayOfWeek">
+				<div class="day">Wed</div>
+				<div class="date">15</div>
+			</div>
+			<div class="eventOfDay"></div>
+			<div class="sport oneHourEvent pm5 time">
+				<div>Workout</div>
+				<div>17.00 - 18.00</div>
+			</div>
+		</div>
+		<div class="days  th" id="thursday">
+			<div class="dayOfWeek">
+				<div class="day">Thu</div>
+				<div class="date">16</div>
+			</div>
+			<div class="eventOfDay"></div>
+			<div class="health oneHourEvent halfPast11 time">
+				<div>Dentist</div>
+				<div>11.30 - 12.30</div>
+			</div>
+		</div>
+		<div class="days fr" id="friday">
+			<div class="dayOfWeek">
+				<div class="day">Fri</div>
+				<div class="date">17</div>
+			</div>
+			<div class="eventOfDay"></div>
+			<div class="work hourAndHalfEvent am9 time">
+				<div>Penguin rescue</div>
+				<div>9.00 - 10.30</div>
+			</div>
+			<div class="entertainment oneHourEvent pm5 time">
+					<div>TGIF-party</div>
+					<div>17.00 - 18.00</div>
+			</div>
+		</div>
+		<div class="days sa" id="saturday">
+			<div class="dayOfWeek">
+				<div class="day">Sat</div>
+				<div class="date">18</div>
+			</div>
+			<div class="eventOfDay"></div>
+			<div class="sport oneHourEvent am11 time">
+				<div>Volleyball</div>
+				<div>11.00 - 12.00</div>
+			</div>
+		</div>
+		<div class="days su" id="sunday">
+			<div class="dayOfWeek">
+				<div class="day">Sun</div>
+				<div class="date">19</div>
+			</div>
+			<div class="eventOfDay"></div>
+			<div class="sport oneHourEvent am10 time">
+				<div>Swimming pool</div>
+				<div>10.00 - 11.00</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<button><div class="plus">+</div></button>
+	</footer>
+</body>
+</html>
+

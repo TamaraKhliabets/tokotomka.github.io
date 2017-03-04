@@ -1,0 +1,188 @@
+header {
+	height: 80px;
+	background-image: url(1.jpg);
+	background-size: cover;
+	border-radius: 10px;
+}
+.topElement, select {
+	font-size: 30px;
+	font-weight: bold;
+	padding: 15px;
+	color: #dd4400;
+}
+.menu {
+	float: left;
+}
+.main-menu > li {
+	position: relative;
+}
+.period  {
+	position: absolute;
+	top: 30px;
+	display: none;
+	font-size: 20px;
+}
+li:hover > .period {
+	display: block;
+}
+a {
+	color: #dd4400;
+}
+.period li:hover {
+	transform: scale(1.2);
+	transition: 0.6s ease;
+}
+select {
+	background: transparent;
+	border: none;
+	float: left;
+	outline: none;
+}
+.sets {
+	float: right;
+	writing-mode: tb-rl;
+	padding: 20px;
+}
+body {
+	font: 15px sans-serif;
+	font-family: 'Arvo', serif;
+	margin: 0 30px;
+	color: #774422;
+}
+.hours, .days {
+	border-right:1px solid #ddddaa;
+	text-align: center;
+	box-sizing: border-box; 
+	height: 500px;
+	float: left;
+}
+#sunday {
+	border-right: none;
+}
+.hours {
+	text-align: left;
+	width: 5.5%;
+}
+.days {
+	width: 13.5%;
+	box-sizing: border-box;
+}
+.time {
+	position: absolute;
+	width: 12.8%;
+	overflow: hidden;
+}
+.inner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+}
+.hours .time {
+	width: 5.1%;
+	white-space: nowrap;
+}
+.am9 {
+	top: 200px;
+}
+.am10 {
+	top: 240px;
+}
+.am11 {
+	top: 280px;
+}
+.halfPast11 {
+	top: 300px;
+}
+.am12 {
+	top: 320px;
+}
+.pm1 {
+	top: 360px;
+}
+.pm2 {
+	top: 400px;
+}
+.pm3 {
+	top: 440px;
+}
+.pm4 {
+	top: 480px;
+}
+.pm5 {
+	top: 520px;
+}
+.pm6 {
+	top: 560px;
+}
+.dayOfWeek {
+	font-weight: bold;
+	text-align: left;
+	padding: 10px;
+}
+.date {
+	font: 40px Arial bold sans-serif;
+	text-align: center;
+}
+.eventOfDay {
+	height: 30px;
+	padding: 5px;
+	color: #dd4400;
+	border-top: 4px double #ddddaa;
+}
+.sport, .health, .work, .entertainment {
+	border-radius: 7px;
+	box-sizing: border-box;
+	padding: 3px;
+
+}
+.sport {
+	background-color: #ffdd11;
+} 
+.health {
+	background-color: #ddddaa;
+}
+.work {
+	background-color: #ccaa55;
+}
+.entertainment {
+	background-color: #ccccbb;
+}
+.oneHourEvent {
+	height: 40px;
+}
+.hourAndHalfEvent {
+	height: calc(40px*1.5);
+}
+.twoHourEvent {
+	height: calc(40px*2);
+}
+button::-moz-focus-inner {
+	border: none;
+	margin: -2px;
+}
+footer {
+	position: fixed;
+    right: 30px; bottom: 5px;
+    padding: 0px;
+    width: 50px;
+}
+button {
+	width: 50px;
+	height: 50px;
+	font-size: 40px;
+	color: #ddddaa;
+	font-weight: normal;
+	background-color: #dd4400;
+	border-radius: 25px;
+	border: none;
+	outline: none;
+	transition: width .1s linear;
+	transition: height .1s linear;
+}
+button:active {
+	background-color: #774422;
+	width: 48px;
+	height: 48px;
+}

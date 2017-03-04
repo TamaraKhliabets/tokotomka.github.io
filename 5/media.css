@@ -1,0 +1,45 @@
+@media(max-width: 768px) {
+	body {
+		margin: 5px;
+	}
+	header {
+		margin-bottom: 10px;
+	}
+	.hours {
+		display: none;
+	}
+	.days {
+		border-bottom: 1px solid #ddddaa;
+		border-right: none;
+		width: 100%;
+		height: auto;
+	}
+	.time {
+		position: static;
+		width: 85%;
+		float: right;
+		margin: 3px;
+	}
+	.dayOfWeek {
+		float: left;
+		width: 10%;
+		padding: 3px;
+		margin: 0;
+		text-align: left;
+	}
+	.eventOfDay {
+		display: none;
+	}
+	footer {
+		right: 10px;
+	}
+}
+
+@media(max-width: 485px) {
+	.day {
+		font-size: 10px;
+	}
+	.date {
+		font-size: 20px;
+	}
+}

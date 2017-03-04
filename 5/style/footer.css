@@ -1,0 +1,28 @@
+button::-moz-focus-inner {
+	border: none;
+	margin: -2px;
+}
+footer {
+	position: fixed;
+    right: 30px; bottom: 5px;
+    padding: 0px;
+    width: 50px;
+}
+button {
+	width: 50px;
+	height: 50px;
+	font-size: 40px;
+	color: #ddddaa;
+	font-weight: normal;
+	box-shadow: 1px 1px 2px black;
+	background-color: #dd4400;
+	border-radius: 25px;
+	border: none;
+	outline: none;
+	transition: width, height .1s linear;
+}
+button:active {
+	background-color: #774422;
+	width: 48px;
+	height: 48px;
+}

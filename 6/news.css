@@ -25,5 +25,30 @@
 .news {
 	margin: 10px 0;
 	padding: 5px;
-	border-bottom: 3px dotted grey;
+}
+
+.title {
+	font-size: 27px;
+	font-weight: bold;
+}
+
+.url {
+	margin-bottom: 10px;
+}
+
+.url a{
+	color: #33334d;
+	font-style: italic;
+}
+
+.img {
+	margin-bottom: 25px;
+}
+
+.footer {
+	text-align: right;
+}
+
+.footer a {
+	color: #47476b;
 }

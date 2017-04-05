@@ -18,7 +18,7 @@ function addNews() {
 				content += "<div class='news'>" +
 							`<div class='title'>${el.title}</div>` +
 							`<div class='description'>${el.description}</div>` +
-							`<div class='url'><a href='${el.url}'>More...</a></div>` +
+							`<div class='url'><a href='${el.url}'>Read more...</a></div>` +
 							`<div class='img'><img src='${el.urlToImage}' /></div>` +
 						   "</div>\n"
 			});

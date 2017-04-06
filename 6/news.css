@@ -1,3 +1,8 @@
+body {
+	margin: 3px 10%;
+	box-sizing: content-box;
+}
+
 .header {
 	font-size: 40px;
 	display: flex;
@@ -18,13 +23,14 @@
 #content {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
 }
 
 .news {
 	margin: 10px 0;
 	padding: 5px;
+	box-sizing: border-box;
+	border: 1px solid black;
+	border-radius: 5px;
 }
 
 .title {
@@ -36,19 +42,37 @@
 	margin-bottom: 10px;
 }
 
-.url a{
+.link {
 	color: #33334d;
 	font-style: italic;
 }
 
 .img {
+	width: 100%;
 	margin-bottom: 25px;
+	text-align: center;
 }
 
 .footer {
 	text-align: right;
+	background-color: #b3b3cc;
+	height: 30px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	line-height: 30px;
+	padding-right: 10px;
 }
 
-.footer a {
+.copyright {
 	color: #47476b;
+}
+
+
+@media(max-width: 768px) {
+	body {
+		margin: 2%;
+	}
+	#content {
+		width: 96%;
+	}
 }

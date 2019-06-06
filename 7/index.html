@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CodeJam Palette</title>
+</head>
+<body>
+<main>
+    <h1>CodeJam Palette</h1>
+    <section class="palette">
+        <div class="block">
+            <button onclick="changeColor()" class="btn" id="bucket">
+                <span><img src="assets/bucket.png" alt="bucket"></span>
+                <span class="tip">
+                    <div>Paint bucket:</div>
+                    <div>Press S to decorate a figure</div>
+                </span>
+            </button>
+            <button onclick="setCurrentColor()" class="btn" id="picker">
+                <span><img src="assets/picker.png" alt="picker"></span>
+                <span class="tip">
+                    <div>Choose color</div>
+                    <div>Press D to be able to change a color</div>
+                </span>
+            </button>
+            <button onclick="moveFigure()" class="btn" id="move">
+                <span><img src="assets/arrow.png" alt="move"></span>
+                <span class="tip">
+                    <div>Move</div>
+                    <div>Press F to move a figure</div>
+                </span>
+            </button>
+            <button onclick="transformFigure()" class="btn" id="transform">
+                <span><img src="assets/transform.png" alt="move"></span>
+                <span class="tip">
+                    <div>Transform</div>
+                    <div>Press G to change figure</div>
+                </span>
+            </button>
+        </div>
+    </section>
+    <section class="colors" id="colors">
+        <div class="block">
+            <button onclick="setColor(this.id)" id="current" class="btn color">
+                <span class="circle current"></span>
+                <span class="tip">
+                    <div>Current color</div>
+                </span>
+            </button>
+            <button onclick="setColor(this.id)" id="previous" class="btn color btn-previous">
+                <span class="circle previous"></span>
+                <span class="tip">
+                    <div>Previous color</div>
+                </span>
+            </button>
+            <button onclick="setColor(this.id)" id="red" class="btn color">
+                <span class="circle red"></span>
+                <span class="tip">
+                    Red
+                </span>
+            </button>
+            <button onclick="setColor(this.id)" id="blue" class="btn color">
+                <span class="circle blue"></span>
+                <span class="tip">
+                    Blue
+                </span>
+            </button>
+            <button onclick="setColor(this.id)" id="green" class="btn color">
+                <div class="circle green"></div>
+                <span class="tip">
+                    Green
+                </span>
+            </button>
+            <button onclick="setColor(this.id)" id="yellow" class="btn color">
+                <span class="circle yellow"></span>
+                <span class="tip">
+                    Yellow
+                </span>
+            </button>
+        </div>
+    </section>
+    <section class="slides">
+        <div id="slides-wrapper"></div>
+        <button class="btn frame-add" onclick="addFrame()">
+            <img src="assets/add.png" alt="add"/>
+            <span class="">Add new</span>
+        </button>
+    </section>
+    <section id="canvas-wrapper" class="block"></section>
+    <section class="preview">
+        <canvas id="canvas-preview"></canvas>
+        <div class="fps">
+            <select id="fsp" class="select" onchange="changeFps(value)"></select>
+            <button onclick="enableFullscreen()" class="option fullscreen">
+                <img src="assets/icon.png" alt="fullscreen" id="fullscreen">
+            </button>
+        </div>
+    </section>
+</main>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

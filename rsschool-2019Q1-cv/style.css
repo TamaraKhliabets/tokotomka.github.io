@@ -1,0 +1,45 @@
+body {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px dotted #6f859b;
+}
+
+header {
+  display: flex;
+  margin: 0;
+}
+
+img {
+  border: 1px solid #6f859b;
+}
+
+h1 {
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  line-height: 120px;
+  vertical-align: middle;
+  color: #f2e8e2;
+  background-color: #6f859b;
+}
+
+h4 {
+  padding: 10px;
+  font-weight: 800;
+  color: #6f859b;
+  background-color: #c2c5cb;
+}
+
+h4 ~ div, h4 ~ a {
+  padding-left: 20px;
+}
+
+a {
+  color: #020201;
+}
+
+a:hover {
+  color: #e3bab3;
+}

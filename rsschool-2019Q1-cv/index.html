@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
+  </head>
+  <body>
+  <header>
+    <h1>Tamara Khliabets</h1>
+    <img src="assets/1.jpg" alt="Tamara Khliabets" width="120" height="160">
+  </header>
+  <main>
+    <section>
+      <h4>&#8658; Contacts</h4>
+      <div>&#128222; +375 29 22 66 949</div>
+      <div>&#128231; tokotomka@gmail.com</div>
+    </section>
+    <section>
+      <h4>&#8658; Summary</h4>
+      <div>
+        The main target is to learn modern technologies for creating web-sites. I'm ready to spend a lot of time and
+        going to ideal.
+      </div>
+    </section>
+    <section>
+      <h4>&#8658; Skills</h4>
+      <div>JavaScript, ES6, React Redux, Git, MongoDB</div>
+    </section>
+    <section>
+      <h4>&#8658; Code examples</h4>
+      <pre>
+                      function getZerosCount(number, base) {
+                          let primeFactors = getPrimeFactors(n = base, base);
+                          return getMin(countOccurrences(number, primeFactors));
+                      }
+
+                      let getPrimeFactors = (n, base) => {
+                          let arr = [], uniqueArr = [], i = 2;
+                          while (n > 1 && n <= base) {
+                              if (n % i === 0) {
+                                  arr.push(i);
+                                  n /= i;
+                              } else if (i === 2) {
+                                  i++;
+                              } else {
+                                  i += 2;
+                              }
+                          }
+                          while (arr.length > 0) {
+                              uniqueArr.push(arr.filter(e => e === arr[0]));
+                              arr = arr.filter(e => e !== arr[0]);
+                          }
+                          return uniqueArr;
+                      };
+
+                      let countOccurrences = (num, arr) => {
+                          return arr.map(e => {
+                              let result = 0, pow = 1;
+                              while (num / Math.pow(e[0], pow) >= 1) {
+                                  result += Math.floor(num / Math.pow(e[0], pow++));
+                              }
+                              return Math.floor(result / e.length);
+                          });
+                      };
+
+                      let getMin = arr => arr.sort((a, b) => a - b)[0];
+                  </pre>
+    </section>
+    <section>
+      <h4>&#8658; Experience</h4>
+      <a href="https://github.com/tokotomka/movie-catalog">Movie Catalog</a>
+    </section>
+    <section>
+      <h4>&#8658; Education</h4>
+      <ul>
+        <li>Rolling Scopes 2017</li>
+        <li>IT Shark 2018</li>
+        <li>Codeacademy</li>
+      </ul>
+    </section>
+    <section>
+      <h4>&#8658; English level</h4>
+      <div>English - 3 years in active use. Speaking / writing level B1.</div>
+      <div>
+        Experience:
+        <ul>
+          <li>English courses in 2016</li>
+          <li>Lead in discussion club</li>
+          <li>Reading IT Blogs, Programming Education materials, understanding natives video</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  </body>
+</html>

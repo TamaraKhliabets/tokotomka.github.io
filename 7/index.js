@@ -278,6 +278,11 @@ class FrameRedactor extends FrameBasic {
         this.canvas.addEventListener('click', this.transformShape.bind(this));
         FrameRedactor.swap('bucket', 'picker', 'move', 'transform');
     }
+
+    static resetStyle() {
+        const tools = ['bucket', 'picker', 'move', 'transform'];
+        tools.forEach(e => FrameRedactor.swapToInactiveClass(e));
+    }
 }
 
 class FrameStack {
@@ -304,7 +309,7 @@ class FrameStack {
         const wrapper = document.getElementById('slides-wrapper');
         wrapper.innerHTML = this.innerElement.join('');
         this.frames.forEach((e, i) => e.frame.init(`slide-${i}`));
-        this.addDduplicateHandlers();
+        this.addDuplicateHandlers();
         this.addRemoveHandlers();
         this.setCurrentFrame();
     }
@@ -316,7 +321,7 @@ class FrameStack {
     }
 
     duplicateFrame(e) {
-        const parentId = e.target.parentNode.id;
+        const parentId = e.target.tagName === 'BUTTON' ? e.target.id : e.target.parentNode.id;
         const index = parentId.slice(10);
         const targetObj = this.frames[index].frame.figures;
         const str = JSON.stringify(targetObj);
@@ -326,11 +331,12 @@ class FrameStack {
         this.draw();
     }
 
-    addDduplicateHandlers() {
+    addDuplicateHandlers() {
         const elements = document.querySelectorAll('[id^="duplicate-"]');
         for (let i = 0; i < elements.length; i += 1) {
             const el = elements[i];
             el.addEventListener('click', this.duplicateFrame.bind(this));
+            FrameRedactor.resetStyle();
         }
     }
 
@@ -347,6 +353,7 @@ class FrameStack {
         for (let i = 0; i < elements.length; i += 1) {
             const el = elements[i];
             el.addEventListener('click', this.removeFrame.bind(this));
+            FrameRedactor.resetStyle();
         }
     }
 

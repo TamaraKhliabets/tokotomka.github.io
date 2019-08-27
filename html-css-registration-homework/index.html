@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="styles/style.css"/>
+    <title>Registration Form</title>
+</head>
+<body>
+    <main class="main">
+        <section class="form">
+                <nav class="form-nav">
+                    <input type="radio" name="sign" class="form-nav__sign form-nav_sign-in" value="Sign in" id="sign_in">
+                        <label class="form-nav__label" for="sign_in">
+                            Sign in
+                        </label>
+                    </input>
+                    <input type="radio" name="sign" class="form-nav__sign form-nav_sign-up" value="Sign up" id="sign_up" checked>
+                        <label class="form-nav__label" for="sign_up">
+                            Sign up
+                        </label>
+                    </input>
+                    <form method="POST" action="https://reqres.in/api/login" class="form-login">
+                        <section class="form-info">
+                                <input type="email" class="form-info__input" name="email" placeholder="Email" required><br>
+                                <input type="password" class="form-info__input" name="password" placeholder="Password" required><br>
+                        </section>
+                        <input type="checkbox" class="form-checkbox__mark" checked>
+                        <label class="form-checkbox">Keep me logged in</label><br>
+                        <input type="submit" class="form-submit" value="Login"><br>
+                        <a href="" class="form-link">Forgot password?</a><br>
+                    </form>
+                    <form method="POST" action="https://reqres.in/api/register" class="form-register">
+                        <section class="form-info">
+                                <input type="tel" class="form-info__input" name="mobilePhone" pattern="\d+" placeholder="Mobile phone" required><br>
+                                <input type="email" class="form-info__input" name="email" placeholder="Eamil ID" required><br>
+                                <input type="password" class="form-info__input" name="password" placeholder="Password" required><br>
+                        </section>
+                        <input type="checkbox" class="form-checkbox__mark" id="checkbox_sign" checked>
+                        <label class="form-checkbox" for="checkbox_sign">I agree to terms and conditions</label><br>
+                        <input type="submit" class="form-submit" value="Register">
+                    </form>
+                </nav>
+        </section> 
+    </main>
+</body>
+
+</html>
